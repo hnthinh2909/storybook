@@ -1,0 +1,43 @@
+li.dropdown {
+    list-style: none;
+}
+
+ul.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    height: 70px;
+    text-align: center;
+}
+
+
+img {
+    border-radius: 50%;
+}
+
+.layout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Alert {
+    width: 400px;
+    
+}
+
+.Form {
+    width: 800px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
