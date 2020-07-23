@@ -2,18 +2,30 @@ import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import PropTypes from 'prop-types';
 
-class ButtonComponent extends Component {
-    render() {
-        return (
-            <div className="layout">
-                <div className="Button">
-                    <Button color="primary" onClick={this.props.onClick}>
-                        {this.props.children}
-                    </Button>
-                </div>
+// class ButtonComponent extends Component {
+//     render() {
+//         return (
+//             <div className="layout">
+//                 <div className="Button">
+//                     <Button color="primary" onClick={this.props.onClick}>
+//                         {this.props.children}
+//                     </Button>
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
+
+function ButtonComponent(props) {
+    return (
+        <div className="layout">
+            <div className="Button">
+                <Button color="primary" onClick={props.onClick}>
+                    {props.children}
+                </Button>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 Button.propTypes = {

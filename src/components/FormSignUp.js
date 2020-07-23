@@ -2,47 +2,88 @@ import React, { Component } from 'react';
 import { Col, Button, Form, FormGroup, Label, Input} from 'reactstrap';
 import PropTypes from 'prop-types';
 
-class FormSignUp extends Component {
-    render() {
-        return (
-            <div className="layout">
-                <div className="Form">
-                    <h2>Sign Up</h2>
-                    <Form>
-                        <FormGroup row>
-                            <Label for="Email" sm={2}>Email</Label>
-                            <Col sm={10}>
-                                <Input type="email" name="email" id="Email" placeholder="Type name of email" />
-                            </Col>
-                        </FormGroup>
-                        <FormGroup row>
-                            <Label for="Password" sm={2}>Password</Label>
-                            <Col sm={10}>
-                                <Input type="password" name="password" id="Password" placeholder="Type password" />
-                            </Col>
-                        </FormGroup>
-                        <FormGroup row>
-                            <Label for="Phone" sm={2}>Phone</Label>
-                            <Col sm={10}>
-                                <Input type="text" name="email" id="Phone" placeholder="Type phone number" />
-                            </Col>
-                        </FormGroup>
-                        <FormGroup row>
-                            <Label for="File" sm={2}>File</Label>
-                            <Col sm={10}>
-                                <Input type="file" name="file" id="File" />
-                            </Col>
-                        </FormGroup>
-                        <FormGroup check row>
-                            <Col sm={{ size: 10, offset: 2 }} className="button">
-                            <Button>Confirm</Button>
-                            </Col>
-                        </FormGroup>
-                    </Form>
-                </div>
+// class FormSignUp extends Component {
+//     render() {
+//         return (
+//             <div className="layout">
+//                 <div className="Form">
+//                     <h2>Sign Up</h2>
+//                     <Form>
+//                         <FormGroup row>
+//                             <Label for="Email" sm={2}>Email</Label>
+//                             <Col sm={10}>
+//                                 <Input type="email" name="email" id="Email" placeholder="Type name of email" />
+//                             </Col>
+//                         </FormGroup>
+//                         <FormGroup row>
+//                             <Label for="Password" sm={2}>Password</Label>
+//                             <Col sm={10}>
+//                                 <Input type="password" name="password" id="Password" placeholder="Type password" />
+//                             </Col>
+//                         </FormGroup>
+//                         <FormGroup row>
+//                             <Label for="Phone" sm={2}>Phone</Label>
+//                             <Col sm={10}>
+//                                 <Input type="text" name="email" id="Phone" placeholder="Type phone number" />
+//                             </Col>
+//                         </FormGroup>
+//                         <FormGroup row>
+//                             <Label for="File" sm={2}>File</Label>
+//                             <Col sm={10}>
+//                                 <Input type="file" name="file" id="File" />
+//                             </Col>
+//                         </FormGroup>
+//                         <FormGroup check row>
+//                             <Col sm={{ size: 10, offset: 2 }} className="button">
+//                             <Button>Confirm</Button>
+//                             </Col>
+//                         </FormGroup>
+//                     </Form>
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
+
+function FormSignUp() {
+    return (
+        <div className="layout">
+            <div className="Form">
+                <h2>Sign Up</h2>
+                <Form>
+                    <FormGroup row>
+                        <Label for="Email" sm={2}>Email</Label>
+                        <Col sm={10}>
+                            <Input type="email" name="email" id="Email" placeholder="Type name of email" />
+                        </Col>
+                    </FormGroup>
+                    <FormGroup row>
+                        <Label for="Password" sm={2}>Password</Label>
+                        <Col sm={10}>
+                            <Input type="password" name="password" id="Password" placeholder="Type password" />
+                        </Col>
+                    </FormGroup>
+                    <FormGroup row>
+                        <Label for="Phone" sm={2}>Phone</Label>
+                        <Col sm={10}>
+                            <Input type="text" name="email" id="Phone" placeholder="Type phone number" />
+                        </Col>
+                    </FormGroup>
+                    <FormGroup row>
+                        <Label for="File" sm={2}>File</Label>
+                        <Col sm={10}>
+                            <Input type="file" name="file" id="File" />
+                        </Col>
+                    </FormGroup>
+                    <FormGroup check row>
+                        <Col sm={{ size: 10, offset: 2 }} className="button">
+                        <Button>Confirm</Button>
+                        </Col>
+                    </FormGroup>
+                </Form>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
     Form.propTypes = {

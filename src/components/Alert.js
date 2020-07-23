@@ -3,9 +3,29 @@ import { Alert } from 'reactstrap';
 import PropTypes from 'prop-types';
 
 import './style.css';
+import { render } from '@testing-library/react';
 
-class AlertComponent extends Component {
-    render() {
+// class AlertComponent extends Component {
+//     render() {
+//         return (
+//             <div className="layout">
+//                 <div className="Alert">
+//                     <Alert color="danger">
+//                         Your password is wrong
+//                     </Alert>
+//                     <Alert color="danger">
+//                         Your email is wrong
+//                     </Alert>
+//                     <Alert color="danger">
+//                         Your email, password is empty
+//                     </Alert>
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
+
+function AlertComponent() {
         return (
             <div className="layout">
                 <div className="Alert">
@@ -21,7 +41,6 @@ class AlertComponent extends Component {
                 </div>
             </div>
         )
-    }
 }
 
 AlertComponent.propTypes = {

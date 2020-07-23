@@ -3,38 +3,67 @@ import { Col, Button, Form, FormGroup, Label, Input} from 'reactstrap';
 import PropTypes from 'prop-types';
 import './style.css';
 
-class FormSignIn extends Component {
-    render() {
-        return (
-            <div className="layout">
-                <div className="Form">
-                    <h2>Sign In</h2>
-                    <Form>
-                        <FormGroup row>
-                            <Label for="Email" sm={2}>Email</Label>
-                            <Col sm={10}>
-                                <Input type="email" name="email" id="Email" placeholder="Type name of email" />
-                            </Col>
-                        </FormGroup>
-                        <FormGroup row>
-                            <Label for="Password" sm={2}>Password</Label>
-                            <Col sm={10}>
-                                <Input type="password" name="password" id="Password" placeholder="Type password" />
-                            </Col>
-                        </FormGroup>
-                        <FormGroup check row>
-                            <Col sm={12} className="button">
-                                <Button color="primary" style={{"margin-right": "15px"}}>Sign Up</Button>
-                                <Button color="primary">Sign In</Button>
-                            </Col>
-                        </FormGroup>
-                    </Form>
-                </div>
-            </div>
-        )
-    }
-}
+// class FormSignIn extends Component {
+//     render() {
+//         return (
+//             <div className="layout">
+//                 <div className="Form">
+//                     <h2>Sign In</h2>
+//                     <Form>
+//                         <FormGroup row>
+//                             <Label for="Email" sm={2}>Email</Label>
+//                             <Col sm={10}>
+//                                 <Input type="email" name="email" id="Email" placeholder="Type name of email" />
+//                             </Col>
+//                         </FormGroup>
+//                         <FormGroup row>
+//                             <Label for="Password" sm={2}>Password</Label>
+//                             <Col sm={10}>
+//                                 <Input type="password" name="password" id="Password" placeholder="Type password" />
+//                             </Col>
+//                         </FormGroup>
+//                         <FormGroup check row>
+//                             <Col sm={12} className="button">
+//                                 <Button color="primary" style={{"margin-right": "15px"}}>Sign Up</Button>
+//                                 <Button color="primary">Sign In</Button>
+//                             </Col>
+//                         </FormGroup>
+//                     </Form>
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
 
+function FormSignIn() {
+    return (
+        <div className="layout">
+            <div className="Form">
+                <h2>Sign In</h2>
+                <Form>
+                    <FormGroup row>
+                        <Label for="Email" sm={2}>Email</Label>
+                        <Col sm={10}>
+                            <Input type="email" name="email" id="Email" placeholder="Type name of email" />
+                        </Col>
+                    </FormGroup>
+                    <FormGroup row>
+                        <Label for="Password" sm={2}>Password</Label>
+                        <Col sm={10}>
+                            <Input type="password" name="password" id="Password" placeholder="Type password" />
+                        </Col>
+                    </FormGroup>
+                    <FormGroup check row>
+                        <Col sm={12} className="button">
+                            <Button color="primary" style={{"margin-right": "15px"}}>Sign Up</Button>
+                            <Button color="primary">Sign In</Button>
+                        </Col>
+                    </FormGroup>
+                </Form>
+            </div>
+        </div>
+    )
+}
     
     Form.propTypes = {
         children: PropTypes.node,

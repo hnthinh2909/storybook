@@ -4,7 +4,46 @@ import { Table } from 'reactstrap';
 import PropTypes from 'prop-types';
 import './style.css';
 
-const TableComponent = (props) => {
+// const TableComponent = (props) => {
+//     return (
+//         <Table>
+//             <thead>
+//                 <tr>
+//                 <th>#</th>
+//                 <th>Avatar</th>
+//                 <th>First Name</th>
+//                 <th>Admin</th>
+//                 <th>Username</th>
+//                 </tr>
+//             </thead>
+//             <tbody>
+//                 <tr>
+//                 <th scope="row">1</th>
+//                 <td><img src="https://loremflickr.com/40/40"/></td>
+//                 <td>Mark</td>
+//                 <td>Yes</td>
+//                 <td>@mdo</td>
+//                 </tr>
+//                 <tr>
+//                 <th scope="row">2</th>
+//                 <td><img src="https://loremflickr.com/40/40"/></td>
+//                 <td>Jacob</td>
+//                 <td>No</td>
+//                 <td>@fat</td>
+//                 </tr>
+//                 <tr>
+//                 <th scope="row">3</th>
+//                 <td><img src="https://loremflickr.com/40/40"/></td>
+//                 <td>Larry</td>
+//                 <td>No</td>
+//                 <td>@twitter</td>
+//                 </tr>
+//             </tbody>
+//         </Table>
+//     );
+// }
+
+function TableComponent() {
     return (
         <Table>
             <thead>
@@ -19,21 +58,21 @@ const TableComponent = (props) => {
             <tbody>
                 <tr>
                 <th scope="row">1</th>
-                <td><img src="https://loremflickr.com/40/40"/></td>
+                <td><img src="https://loremflickr.com/40/40" alt="avatar"/></td>
                 <td>Mark</td>
                 <td>Yes</td>
                 <td>@mdo</td>
                 </tr>
                 <tr>
                 <th scope="row">2</th>
-                <td><img src="https://loremflickr.com/40/40"/></td>
+                <td><img src="https://loremflickr.com/40/40" alt="avatar"/></td>
                 <td>Jacob</td>
                 <td>No</td>
                 <td>@fat</td>
                 </tr>
                 <tr>
                 <th scope="row">3</th>
-                <td><img src="https://loremflickr.com/40/40"/></td>
+                <td><img src="https://loremflickr.com/40/40" alt="avatar"/></td>
                 <td>Larry</td>
                 <td>No</td>
                 <td>@twitter</td>
